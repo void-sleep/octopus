@@ -1,0 +1,66 @@
+<svg width="100%" height="100%" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 黑色背景 -->
+  <rect width="800" height="600" fill="#121212" />
+
+  <!-- 科技网格背景 -->
+  <defs>
+    <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <rect width="50" height="50" fill="none" />
+      <path d="M0,0 L50,0 L50,50 L0,50 Z" stroke="#2a2a2a" stroke-width="1" />
+      <path d="M25,0 L25,50 M0,25 L50,25" stroke="#2a2a2a" stroke-width="0.5" />
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#grid)" />
+
+  <!-- 蓝色渐变元素 -->
+  <radialGradient id="blueGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+    <stop offset="0%" stop-color="#00b8ff" stop-opacity="0.2" />
+    <stop offset="100%" stop-color="#0055bb" stop-opacity="0.05" />
+  </radialGradient>
+  <ellipse cx="400" cy="300" rx="350" ry="250" fill="url(#blueGradient)" />
+
+  <!-- 白色光点 -->
+  <g opacity="0.7">
+    <circle cx="200" cy="150" r="5" fill="white" />
+    <circle cx="600" cy="180" r="3" fill="white" />
+    <circle cx="300" cy="400" r="4" fill="white" />
+    <circle cx="550" cy="450" r="6" fill="white" />
+    <circle cx="150" cy="480" r="2" fill="white" />
+  </g>
+
+  <!-- 科技线条 -->
+  <g stroke="#00b8ff" stroke-width="1" opacity="0.3">
+    <line x1="100" y1="100" x2="700" y2="500" />
+    <line x1="700" y1="100" x2="100" y2="500" />
+    <line x1="200" y1="200" x2="600" y2="400" />
+    <line x1="600" y1="200" x2="200" y2="400" />
+  </g>
+
+  <!-- 金枪鱼图标（简约风格） -->
+  <g transform="translate(400, 300)" fill="none" stroke="#00b8ff" stroke-width="2">
+    <!-- 鱼身 -->
+    <ellipse cx="0" cy="0" rx="100" ry="60" fill="none" />
+    <path d="M-100,0 Q-160,0 -160,50 Q-160,100 -100,100" fill="#00b8ff" opacity="0.7" />
+
+    <!-- 鱼尾 -->
+    <path d="M-100,0 L-160,-50 L-140,-20 L-160,20 L-160,50 Z" fill="#0099cc" />
+
+    <!-- 鱼鳍 -->
+    <path d="M-40,-30 L0,-60 L40,-30 L20,-40 L-20,-40 Z" fill="#0099cc" />
+    <path d="M-40,30 L0,60 L40,30 L20,40 L-20,40 Z" fill="#0099cc" />
+
+    <!-- 鱼眼 -->
+    <circle cx="50" cy="-15" r="8" fill="white" />
+    <circle cx="55" cy="-15" r="3" fill="#00b8ff" />
+  </g>
+
+
+  <!-- 光晕效果 -->
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#00b8ff" stop-opacity="0.7" />
+      <stop offset="100%" stop-color="#00b8ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <circle cx="400" cy="300" r="150" fill="url(#glow)" opacity="0.5" />
+</svg>
